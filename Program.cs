@@ -55,29 +55,6 @@ namespace window
                 rowValues.Clear();
                 while (reader.Read())
                 {
-/*                        for (int col = 0; col < reader.FieldCount; col++)
-                        {
-                            tree.AppendColumn(reader.GetName(col).ToString(), new Gtk.CellRendererText(), "text", col);
-                            colTypes.Add(typeof(string));//reader.GetFieldType(col));
-                        }
-                            //Console.Write("{0,-11}", reader.GetName(col).ToString() + " ");
-                      //  Console.WriteLine();
-                        for (int col = 0; col < reader.FieldCount; col++)
-                        {
-                            if (reader.GetDataTypeName(col).ToString() == "INT")
-                                Console.Write("number     ");
-                            if (reader.GetDataTypeName(col).ToString() == "DOUBLE")
-                                Console.Write("decimal    ");
-                            if (reader.GetDataTypeName(col).ToString() == "DATE")
-                                Console.Write("date       ");
-                            if (reader.GetDataTypeName(col).ToString() == "TIME")
-                                Console.Write("time       ");
-                            if ((reader.GetDataTypeName(col).ToString() == "VARCHAR") || (reader.GetDataTypeName(col).ToString() == "TEXT"))
-                                Console.Write("text       ");
-                        }
-                        Console.WriteLine();*/
-
-
                     for (int col = 0; col < reader.FieldCount; col++)
                     {
                         rowValues.Add(reader[reader.GetName(col).ToString()].ToString());
