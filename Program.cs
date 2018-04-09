@@ -12,10 +12,10 @@ namespace window
             Application.Init();
             MainWindow win = new MainWindow();
             win.Resize(400, 400);
-            string connectionString =
+            string connectionString =  //enter below det for your mysql database
          "Server=localhost;" +
-         "Database=dom;" +
-         "User ID=domin;" +
+         "Database=test;" +
+         "User ID=test;" +
         // "Password=mypassword;" +
                 "Pooling=false; Convert Zero Datetime=True; Allow Zero Datetime=True;";
             IDbConnection dbcon;
