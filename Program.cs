@@ -34,7 +34,7 @@ namespace window
             string sql =
 
            "SELECT * " +
-           "FROM dom";
+           "FROM test";                  // database table
             dbcmd.CommandText = sql;
             IDataReader reader = dbcmd.ExecuteReader();
             Gtk.TreeView tree = new Gtk.TreeView();
